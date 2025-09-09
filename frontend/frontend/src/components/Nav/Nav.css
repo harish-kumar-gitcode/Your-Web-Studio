@@ -1,0 +1,33 @@
+/* Styles for the outer container */
+.nav-container {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0px;
+}
+/* Styles for the Link Component */
+.nav-container a {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-weight: 650;
+  font-size: 18px;
+  color: #1d1f4e;
+  padding: 8px 16px 0px 16px;
+  border: 0px solid;
+  border-radius: 20px;
+  position: relative;
+}
+/* Underline hover effect */
+.nav-container a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #2563eb;
+  bottom: 0;
+  left: 14px;
+}
+.nav-container a:hover::before {
+  width: 80%;
+  transition: width 0.5s ease;
+}

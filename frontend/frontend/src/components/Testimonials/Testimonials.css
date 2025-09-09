@@ -1,0 +1,68 @@
+/* Styles for the outer container. */
+.container {
+  width: 220px;
+  height: 270px;
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 8px 20px gray;
+  margin: 20px 0px 10px 20px;
+}
+/* Styles for the profile container */
+.profile-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Image styles */
+.profile-container img {
+  width: 18%;
+  border: 0px solid;
+  border-radius: 50%;
+  padding: 6px;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+}
+.stars-container {
+  display: flex;
+}
+/* Styles for the star */
+.star {
+  width: 20px;
+  height: 20px;
+  background: gray;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+.gold {
+  background-color: gold;
+}
+/* Content Styles */
+.review-container {
+  font-family: "Open Sans";
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.review-container p {
+  min-height: 65%;
+  text-align: left;
+  margin-top: 10%;
+}
+.review-container h4 {
+  text-align: right;
+  color: rgb(59, 59, 59);
+}

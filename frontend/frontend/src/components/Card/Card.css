@@ -1,0 +1,173 @@
+/* Styles for the outer container. */
+.card-container {
+  width: 300px;
+  height: 470px;
+  border: 1px solid grey;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px grey;
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+/* Card container hover effect */
+.card-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+/* common hover for all buttons */
+.card-container button:hover {
+  transform: scale(1.05);
+}
+/* Image styles. */
+.card-container img {
+  width: 80%;
+}
+/* Basic styles for the details contianer and the h3 and p element */
+.details {
+  width: 100%;
+  font-family: "Open Sans";
+  margin-bottom: 10px;
+}
+.details h3 {
+  margin: 0px;
+  font-size: 22px;
+  margin-top: 15px;
+}
+.details p {
+  margin: 0px;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/* Styles for the button */
+.card-container button {
+  padding: 10px 20px;
+  border: 0px solid;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* Variants */
+/* Web Development */
+.web {
+  color: #2563eb;
+  opacity: 0;
+}
+.web.animate {
+  animation: move 1s ease-in forwards;
+}
+.web p {
+  color: #6b7280;
+}
+.web button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: 1px solid #2563eb;
+}
+.web button:hover {
+  color: #2563eb;
+  background-color: #fff;
+}
+/* SEO Optimization */
+.seo {
+  background-color: #f0fdfa;
+  color: #0d9488;
+  opacity: 0;
+}
+.seo.animate {
+  animation: move 1s ease-in forwards;
+  animation-delay: 0.8s;
+}
+.seo p {
+  color: #6b7280;
+}
+.seo button {
+  background-color: #0d9488;
+  color: #ffffff;
+}
+.seo button:hover {
+  color: #0d9488;
+  background-color: #fff;
+  border: 1px solid #0d9488;
+}
+
+/* WhatsApp Automation */
+.whatsapp {
+  background-color: #e6fdf4;
+  color: #25d366;
+  opacity: 0;
+}
+.whatsapp.animate {
+  animation: move 1s ease-in forwards;
+  animation-delay: 1.6s;
+}
+.whatsapp p {
+  color: #6b7280;
+}
+.whatsapp button {
+  background-color: #22c55e;
+  color: #fff;
+}
+.whatsapp button:hover {
+  color: #22c55e;
+  background-color: #fff;
+  border: 1px solid #22c55e;
+}
+
+/* CRM */
+.crm {
+  background-color: #fff7ed;
+  color: #f59e0b;
+  opacity: 0;
+}
+.crm.animate {
+  animation: move 1s ease-in forwards;
+  animation-delay: 2.4s;
+}
+.crm p {
+  color: #6b7280;
+}
+.crm button {
+  background-color: #f59e0b;
+  color: #fff;
+}
+.crm button:hover {
+  color: #f59e0b;
+  background-color: #fff;
+  border: 1px solid #f59e0b;
+}
+/* Animation for the Cards*/
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/* Default container for clients*/
+.default {
+  width: 250px;
+  height: 280px;
+}
+.default p {
+  color: #6b7280;
+}
+.default button {
+  color: #fff;
+  background-color: #22c55e;
+}
+.default button:hover {
+  color: #22c55e;
+  background-color: #fff;
+  border: 1px solid #22c55e;
+}

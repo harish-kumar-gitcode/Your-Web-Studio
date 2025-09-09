@@ -57,6 +57,7 @@ function Home() {
             description="We build fast, secure, and scalable websites tailored to your business needs, ensuring smooth user experiences across all devices."
             variant="web"
             animate={animateAll}
+            link="null"
           ></Card>
           <Card
             image={SEO}
@@ -64,6 +65,7 @@ function Home() {
             description="Improve your visibility with our proven SEO strategies that boost rankings, drive organic traffic, and help your business get found online."
             variant="seo"
             animate={animateAll}
+            link="null"
           ></Card>
           <Card
             image={Whatsapp}
@@ -71,6 +73,7 @@ function Home() {
             description="Engage customers instantly with smart WhatsApp automation — streamline support, send updates, and improve conversions effortlessly."
             variant="whatsapp"
             animate={animateAll}
+            link="null"
           ></Card>
           <Card
             image={CRM}
@@ -78,6 +81,7 @@ function Home() {
             description="Simplify your business operations with powerful CRM and inventory tools designed to manage customers, sales, and stock in one place."
             variant="crm"
             animate={animateAll}
+            link="null"
           ></Card>
         </div>
       </div>
@@ -155,9 +159,6 @@ function Home() {
               updates, and technical support so your business keeps growing.
             </p>
           </div>
-        </div>
-        <div className="cta-btn">
-          <button>Free Consultation</button>
         </div>
       </div>
       {/* Footer Section of the page. */}

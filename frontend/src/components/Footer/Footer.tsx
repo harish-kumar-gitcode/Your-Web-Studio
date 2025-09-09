@@ -1,7 +1,7 @@
 import "./Footer.css";
 import logo from "../../assets/Logo_White.png";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
 
 function Footer() {
   //Maintaining the state of the form fields
@@ -10,7 +10,7 @@ function Footer() {
   const [button, setButton] = useState("Subscribe");
 
   //Handling the submit event.
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     console.log("Email submitted:", email);

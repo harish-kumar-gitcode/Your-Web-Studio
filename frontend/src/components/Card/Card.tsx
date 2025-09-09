@@ -1,8 +1,23 @@
-import { useState } from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
 
-function Card({ image, title, description, link, variant, animate }) {
+interface CardProps {
+  image: string;
+  title: string;
+  description: string;
+  link: string;
+  variant: "web" | "crm" | "whatsapp" | "seo" | string;
+  animate?: boolean;
+}
+
+function Card({
+  image,
+  title,
+  description,
+  link,
+  variant,
+  animate,
+}: CardProps) {
   //Creating a card for the services and passing a variant for styles and title and description as props.
   return (
     <>

@@ -1,7 +1,13 @@
 import "./Testimonials.css";
+type TestimonialProps = {
+  rating: number;
+  comment: string;
+  owner: string;
+  profile: string;
+};
 
 //Defining the testimonials function.
-function Testimonials({ rating, comment, owner, profile }) {
+function Testimonials({ rating, comment, owner, profile }: TestimonialProps) {
   const totalStars = 5;
   //Returing the Section for testimonials.
   return (
